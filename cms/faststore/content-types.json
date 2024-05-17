@@ -1,0 +1,14 @@
+[
+  {
+    "id": "mySingletonPage",
+    "name": "Singleton Page",
+    "configurationSchemaSets": [],
+    "isSingleton": true
+  },
+  {
+    "id": "myMultitonPage",
+    "name": "MultitonPage Page",
+    "configurationSchemaSets": [],
+    "isSingleton": false
+  }
+]

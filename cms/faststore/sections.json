@@ -2,8 +2,8 @@
   {
     "name": "TestComponent",
     "schema": {
-      "title": "Test Component X",
-      "description": "Get your 20% off on the first purchase!",
+      "title": "Teste VTEX vamos",
+      "description": "Testando WS!",
       "type": "object",
       "required": [
         "title",
