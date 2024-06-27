@@ -1,3 +1,3 @@
-import TestComponent from './TestComponent'
+import BannerCategory from './BannerCategory'
 
-export default { TestComponent }
+export default { BannerCategory }

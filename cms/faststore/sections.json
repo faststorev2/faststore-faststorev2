@@ -1,9 +1,9 @@
 [
   {
-    "name": "TestComponent",
+    "name": "CallToAction",
     "schema": {
-      "title": "Test Component X",
-      "description": "Get your 20% off on the first purchase!",
+      "title": "Call To Action",
+      "description": "Get your 20% off on the first purchase! Teste-Gabriel",
       "type": "object",
       "required": [
         "title",
@@ -30,6 +30,46 @@
               "title": "URL",
               "type": "string"
             }
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "BannerCategory",
+    "schema": {
+      "title": "Banner For Category",
+      "description": "Banner for category",
+      "type": "object",
+      "properties": {
+        "image": {
+          "title": "Imagem (Desktop)",
+          "type": "string",
+          "widget": {
+            "ui:widget": "media-gallery"
+          }
+        },
+        "mobileImage": {
+          "title": "Imagem (Mobile)",
+          "type": "string",
+          "widget": {
+            "ui:widget": "media-gallery"
+          }
+        },
+        "url": {
+          "type": "string",
+          "title": "Link"
+        },
+        "alt": {
+          "type": "string",
+          "title": "Rótulo Alternativo"
+        },
+        "offerEnabled": {
+          "type": "boolean",
+          "title": "Habilitar essa oferta",
+          "default": true,
+          "widget": {
+            "ui:widget": "checkbox"
           }
         }
       }
