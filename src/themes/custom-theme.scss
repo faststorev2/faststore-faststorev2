@@ -1,37 +1,166 @@
 // ----------------------------------------------------------
 // GLOBAL TOKENS
-// Custom Theme
+// Theme Midnight
 // ----------------------------------------------------------
 
-@layer theme {
-  .theme {
-    // --------------------------------------------------------
-    // Colors (Branding Core)
-    // --------------------------------------------------------
-    --fs-color-main-0: blue;
-    // --------------------------------------------------------
-    // Typography (Branding Core)
-    // --------------------------------------------------------
+.theme {
+  // --------------------------------------------------------
+  // Colors (Branding Core)
+  // --------------------------------------------------------
 
-    // --------------------------------------------------------
-    // Spacing (UI Essentials)
-    // --------------------------------------------------------
+  // PALETTE
+  --fs-color-main-0: #fff8e1;
+  /* Amarelo muito claro */
+  --fs-color-main-1: #ffecb3;
+  /* Amarelo claro */
+  --fs-color-main-2: #ffe082;
+  /* Amarelo */
+  --fs-color-main-3: #ffd54f;
+  /* Amarelo dourado */
+  --fs-color-main-4: #ffca28;
+  /* Amarelo escuro */
 
-    // --------------------------------------------------------
-    // Grid & Layout (UI Essentials)
-    // --------------------------------------------------------
+  --fs-color-accent-0: #f8bbd0;
+  /* Rosa claro */
+  --fs-color-accent-1: #f48fb1;
+  /* Rosa */
+  --fs-color-accent-2: #f06292;
+  /* Rosa médio */
+  --fs-color-accent-3: #ec407a;
+  /* Rosa forte */
+  --fs-color-accent-4: #e91e63;
+  /* Rosa escuro */
 
-    // --------------------------------------------------------
-    // Interactive Controls (UI Essentials)
-    // --------------------------------------------------------
+  --fs-color-neutral-0: #ffebee;
+  /* Rosa muito claro */
+  --fs-color-neutral-1: #ffcdd2;
+  /* Rosa claro */
+  --fs-color-neutral-2: #ff8a80;
+  /* Rosa pálido */
+  --fs-color-neutral-3: #ff5252;
+  /* Rosa avermelhado */
+  --fs-color-neutral-4: #ff1744;
+  /* Rosa vermelho */
+  --fs-color-neutral-5: #ff80ab;
+  /* Rosa claro */
+  --fs-color-neutral-6: #ff4081;
+  /* Rosa forte */
+  --fs-color-neutral-7: #f50057;
+  /* Rosa escuro */
 
-    // --------------------------------------------------------
-    // Refinements
-    // --------------------------------------------------------
 
-    // --------------------------------------------------------
-    // FS UI Components
-    // --------------------------------------------------------
+  // HIERARCHY
+  --fs-color-primary-bkg: var(--fs-color-main-3);
+  --fs-color-primary-bkg-light: var(--fs-color-main-2);
+  --fs-color-primary-text: var(--fs-color-neutral-7);
+
+  --fs-color-secondary-text: var(--fs-color-neutral-7);
+
+  --fs-color-tertiary-bkg-hover: var(--fs-color-main-2);
+  --fs-color-tertiary-bkg-active: var(--fs-color-main-3);
+
+  // COMPONENTS & STATES
+  --fs-color-body-bkg: var(--fs-color-main-0);
+  --fs-body-bkg: linear-gradient(0deg,
+      var(--fs-color-main-0) 0%,
+      var(--fs-color-main-2) 20%,
+      var(--fs-color-main-0) 100%);
+
+  --fs-color-text-display: var(--fs-color-neutral-7);
+
+  --fs-color-link: var(--fs-color-neutral-7);
+  --fs-color-link-inverse: var(--fs-color-neutral-7);
+
+  // SITUATIONS
+  --fs-color-success-text: #50b191;
+  --fs-color-success-bkg: #007043;
+  --fs-color-warning-bkg: #b17000;
+  --fs-color-disabled-bkg: var(--fs-color-main-3);
+
+  // --------------------------------------------------------
+  // Typography (Branding Core)
+  // --------------------------------------------------------
+
+  // FACE
+  --fs-text-face-body: 'Raleway', sans-serif;
+
+  // NUMERIC SCALE
+  --fs-text-size-base: 18px; // 1rem
+  --fs-text-size-0: 14px; // Smallest
+  --fs-text-size-1: 16px; // Smaller
+
+  // --------------------------------------------------------
+  // Refinements
+  // --------------------------------------------------------
+
+  // BORDERS
+  --fs-border-radius: 20px;
+
+  --fs-border-width: 2px;
+
+  --fs-border-color-light: var(--fs-color-main-3);
+  --fs-border-color: var(--fs-color-main-3);
+  --fs-border-color-hover: var(--fs-color-main-2);
+  --fs-border-color-active: var(--fs-color-main-3);
+
+  // SHADOW
+  --fs-shadow-hover: 0 0 10px rgb(40 21 132 / 30%), 0 0 0 10px var(--fs-color-main-1);
+
+  // --------------------------------------------------------
+  // FS UI Components
+  // --------------------------------------------------------
+
+  --fs-logo-width: 8rem;
+
+  .section {
     // Add here the customizations for FastStore UI components.
+
+    [data-fs-skeleton] {
+      --fs-skeleton-shimmer-bkg-color: var(--fs-color-disabled-bkg);
+    }
+
+    [data-fs-hero] {
+      --fs-hero-image-border-radius: 130px 0 0 130px;
+      --fs-hero-main-bkg-color: var(--fs-color-main-1);
+    }
+
+    [data-fs-button] {
+      --fs-button-border-radius: var(--fs-border-radius-pill);
+
+      --fs-button-primary-inverse-text-color: var(--fs-color-neutral-0);
+      --fs-button-primary-inverse-text-color-hover: var(--fs-color-text);
+      --fs-button-primary-inverse-text-color-active: var(--fs-color-neutral-7);
+
+      --fs-button-primary-border-color: var(--fs-color-neutral-7);
+
+      --fs-button-tertiary-text-color-active: var(--fs-color-text);
+    }
+
+    [data-fs-input] {
+      --fs-input-text-size: 16px;
+      background-color: var(--fs-color-body-bkg);
+    }
+
+    [data-fs-input-field] {
+      --fs-input-field-size: 16px;
+    }
+
+    [data-fs-product-card] {
+      --fs-product-card-padding: var(--fs-spacing-2) var(--fs-spacing-2) var(--fs-spacing-4) var(--fs-spacing-2);
+      --fs-product-card-bkg-color: var(--fs-color-main-0);
+      --fs-product-card-img-scale-hover: 1.05;
+    }
+
+    [data-fs-newsletter] {
+      --fs-newsletter-text-color: var(--fs-color-text-display);
+    }
+
+    [data-fs-navbar] {
+      --fs-navbar-bkg-color: var(--fs-color-main-0);
+    }
+
+    [data-fs-footer] {
+      --fs-footer-bkg-color: var(--fs-color-main-0);
+    }
   }
 }

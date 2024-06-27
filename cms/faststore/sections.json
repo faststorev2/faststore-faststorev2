@@ -1,0 +1,78 @@
+[
+  {
+    "name": "CallToAction",
+    "schema": {
+      "title": "Call To Action",
+      "description": "Get your 20% off on the first purchase! Teste-Gabriel",
+      "type": "object",
+      "required": [
+        "title",
+        "link"
+      ],
+      "properties": {
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "link": {
+          "title": "Link Path",
+          "type": "object",
+          "required": [
+            "text",
+            "url"
+          ],
+          "properties": {
+            "text": {
+              "title": "Text",
+              "type": "string"
+            },
+            "url": {
+              "title": "URL",
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "BannerCategory",
+    "schema": {
+      "title": "Banner For Category",
+      "description": "Banner for category",
+      "type": "object",
+      "properties": {
+        "image": {
+          "title": "Imagem (Desktop)",
+          "type": "string",
+          "widget": {
+            "ui:widget": "media-gallery"
+          }
+        },
+        "mobileImage": {
+          "title": "Imagem (Mobile)",
+          "type": "string",
+          "widget": {
+            "ui:widget": "media-gallery"
+          }
+        },
+        "url": {
+          "type": "string",
+          "title": "Link"
+        },
+        "alt": {
+          "type": "string",
+          "title": "Rótulo Alternativo"
+        },
+        "offerEnabled": {
+          "type": "boolean",
+          "title": "Habilitar essa oferta",
+          "default": true,
+          "widget": {
+            "ui:widget": "checkbox"
+          }
+        }
+      }
+    }
+  }
+]
