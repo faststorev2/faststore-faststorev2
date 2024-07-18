@@ -1,9 +1,9 @@
 [
   {
-    "name": "TestComponent",
+    "name": "CallToAction",
     "schema": {
-      "title": "Test Component X",
-      "description": "Get your 20% off on the first purchase!",
+      "title": "Call To Action",
+      "description": "Get your 20% off on the first purchase! Teste-Gabriel",
       "type": "object",
       "required": [
         "title",
@@ -31,6 +31,124 @@
               "type": "string"
             }
           }
+        }
+      }
+    }
+  },
+  {
+    "name": "BannerCategory",
+    "schema": {
+      "title": "Banner For Category",
+      "description": "Banner for category",
+      "type": "object",
+      "properties": {
+        "image": {
+          "title": "Imagem (Desktop)",
+          "type": "string",
+          "widget": {
+            "ui:widget": "media-gallery"
+          }
+        },
+        "mobileImage": {
+          "title": "Imagem (Mobile)",
+          "type": "string",
+          "widget": {
+            "ui:widget": "media-gallery"
+          }
+        },
+        "url": {
+          "type": "string",
+          "title": "Link"
+        },
+        "alt": {
+          "type": "string",
+          "title": "Rótulo Alternativo"
+        },
+        "offerEnabled": {
+          "type": "boolean",
+          "title": "Habilitar essa oferta",
+          "default": true,
+          "widget": {
+            "ui:widget": "checkbox"
+          }
+        }
+      }
+    }
+  },
+  {
+    "name": "ModalProductsCategory",
+    "schema": {
+      "title": "Modal For Product Specific Category",
+      "description": "Modal For Product Specific Category",
+      "type": "object",
+      "properties": {
+        "textDescription": {
+          "type": "string",
+          "title": "Texto exibido no modal",
+          "description": "Ex: “Tem certeza que é adolescente?”"
+        },
+        "textButtonAccept": {
+          "type": "string",
+          "title": "Titulo do botão aceitar",
+          "description": "Ex: “Sim”"
+        },
+        "colorButtonAccept": {
+          "type": "string",
+          "title": "Hexadecimal",
+          "default":  "#0000FF"
+        },
+        "textButtonDecline": {
+          "type": "string",
+          "title": "Titulo do botão recusar",
+          "description": "Ex: “Não”"
+        },
+        "colorButtonDecline": {
+          "type": "string",
+          "title": "Hexadecimal",
+          "default": "#FF0000"
+        }
+      }
+    }
+  },
+  {
+    "name": "CustomIconsAlert",
+    "schema": {
+      "title": "Alert with more Icon options",
+      "description": "Add an alert that has more Icon options",
+      "type": "object",
+      "required": ["icon", "content", "dismissible"],
+      "properties": {
+        "icon": {
+          "type": "string",
+          "title": "Icon",
+          "enumNames": [
+            "Bell",
+            "BellRinging",
+            "Checked",
+            "Info",
+            "Truck",
+            "User",
+            "Plus",
+            "PlusCircle",
+            "Ruler",
+            "Star",
+            "Storefront",
+            "Twitter"
+          ],
+          "enum": [
+            "Bell",
+            "BellRinging",
+            "Checked",
+            "Info",
+            "Truck",
+            "User",
+            "Plus",
+            "PlusCircle",
+            "Ruler",
+            "Star",
+            "Storefront",
+            "Twitter"
+          ]
         }
       }
     }

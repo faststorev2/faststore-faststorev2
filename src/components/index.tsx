@@ -1,3 +1,4 @@
-import TestComponent from './TestComponent'
+import BannerCategory from './BannerCategory'
+import ModalProductsCategory from './ModalProductsCategory'
 
-export default { TestComponent }
+export default { BannerCategory, ModalProductsCategory }
