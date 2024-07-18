@@ -11,7 +11,7 @@
     "test": "faststore test"
   },
   "dependencies": {
-    "@faststore/core": "3.0.35",
+    "@faststore/core": "3.0.87",
     "@vtex/cli-plugin-cms": "^1.1.1",
     "date-fns": "^3.6.0",
     "global": "^4.4.0",
