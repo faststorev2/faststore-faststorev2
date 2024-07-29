@@ -9,16 +9,27 @@
   // --------------------------------------------------------
 
   // PALETTE
-  --fs-color-main-0: #fff8e1;
-  /* Amarelo muito claro */
-  --fs-color-main-1: #ffecb3;
-  /* Amarelo claro */
-  --fs-color-main-2: #ffe082;
-  /* Amarelo */
-  --fs-color-main-3: #ffd54f;
-  /* Amarelo dourado */
-  --fs-color-main-4: #ffca28;
-  /* Amarelo escuro */
+  // --fs-color-main-0: #fff8e1;
+  // /* Amarelo muito claro */
+  // --fs-color-main-1: #ffecb3;
+  // /* Amarelo claro */
+  // --fs-color-main-2: #ffe082;
+  // /* Amarelo */
+  // --fs-color-main-3: #ffd54f;
+  // /* Amarelo dourado */
+  // --fs-color-main-4: #ffca28;
+  // /* Amarelo escuro */
+
+  --fs-color-purple-0: #f3e5f5;
+  /* Roxo muito claro */
+  --fs-color-purple-1: #e1bee7;
+  /* Roxo claro */
+  --fs-color-purple-2: #ce93d8;
+  /* Roxo */
+  --fs-color-purple-3: #ba68c8;
+  /* Roxo médio */
+  --fs-color-purple-4: #ab47bc;
+  /* Roxo escuro */
 
   --fs-color-accent-0: #f8bbd0;
   /* Rosa claro */
@@ -76,6 +87,7 @@
   --fs-color-success-bkg: #007043;
   --fs-color-warning-bkg: #b17000;
   --fs-color-disabled-bkg: var(--fs-color-main-3);
+  --fs-color-disabled-bkg-banner-category: var(--fs-color-neutral-7);
 
   // --------------------------------------------------------
   // Typography (Branding Core)

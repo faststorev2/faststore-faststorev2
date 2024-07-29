@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Button } from '@faststore/ui'
 
+import { usePDP }  from "@faststore/core"
+
 interface ModalProductsCategoryProps {
     textDescription: string;
     textButtonAccept: string;
@@ -10,8 +12,11 @@ interface ModalProductsCategoryProps {
 }
 
 function ModalProductsCategory(props: ModalProductsCategoryProps) {
+    console.log(props, "props")
     const [modal, setModal] = useState(false);
 
+    const context = usePDP()
+    console.log(context, "context");
     return (
         <>
             <Button variant="primary" onClick={() => setModal(true)}>
@@ -41,6 +46,7 @@ function ModalProductsCategory(props: ModalProductsCategoryProps) {
                             textAlign: 'center',
                         }}
                     >
+                        <>Extend API: Brand product:{context.data.product.brand.name}</>
                         <p>{props.textDescription}</p>
                         <button
                             onClick={() => setModal(false)}

@@ -95,7 +95,7 @@
         "colorButtonAccept": {
           "type": "string",
           "title": "Hexadecimal",
-          "default":  "#0000FF"
+          "default": "#0000FF"
         },
         "textButtonDecline": {
           "type": "string",
@@ -106,49 +106,6 @@
           "type": "string",
           "title": "Hexadecimal",
           "default": "#FF0000"
-        }
-      }
-    }
-  },
-  {
-    "name": "CustomIconsAlert",
-    "schema": {
-      "title": "Alert with more Icon options",
-      "description": "Add an alert that has more Icon options",
-      "type": "object",
-      "required": ["icon", "content", "dismissible"],
-      "properties": {
-        "icon": {
-          "type": "string",
-          "title": "Icon",
-          "enumNames": [
-            "Bell",
-            "BellRinging",
-            "Checked",
-            "Info",
-            "Truck",
-            "User",
-            "Plus",
-            "PlusCircle",
-            "Ruler",
-            "Star",
-            "Storefront",
-            "Twitter"
-          ],
-          "enum": [
-            "Bell",
-            "BellRinging",
-            "Checked",
-            "Info",
-            "Truck",
-            "User",
-            "Plus",
-            "PlusCircle",
-            "Ruler",
-            "Star",
-            "Storefront",
-            "Twitter"
-          ]
         }
       }
     }
