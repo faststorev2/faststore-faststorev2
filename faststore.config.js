@@ -1,11 +1,11 @@
 
 module.exports = {
   seo: {
-  "title": "FastStore",
-  "description": "A fast and performant store framework",
-  "titleTemplate": "%s | FastStore",
-  "author": "FastStore"
-},
+    "title": "FastStore",
+    "description": "A fast and performant store framework",
+    "titleTemplate": "%s | FastStore",
+    "author": "FastStore"
+  },
 
   // Theming
   theme: 'custom-theme',
@@ -83,7 +83,7 @@ module.exports = {
 
   analytics: {
     // https://developers.google.com/tag-platform/tag-manager/web#standard_web_page_installation,
-    gtmContainerId: "",
+    gtmContainerId: "GTM-5KSSR9NK",
   },
 
   experimental: {
