@@ -15,7 +15,7 @@ function ModalProductsCategory(props: ModalProductsCategoryProps) {
     return (
         <>
             <Button variant="primary" onClick={() => setModal(true)}>
-                Botão Adolescente
+                Botão menor de idade
             </Button>
             {modal && (
                 <div
